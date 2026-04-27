@@ -27,3 +27,20 @@ I created a `Dockerfile` to build the application into a Docker image.
 Command used:
 ```bash
 docker build -t hello-world .
+## Monitoring Stack (Docker Compose)
+
+### Services Used
+- Prometheus
+- Grafana
+- Node Exporter
+- Blackbox Exporter
+
+### How to Run
+docker compose up -d
+
+### Access
+- Grafana: http://localhost:3001
+- Prometheus: http://localhost:9090
+
+### Status
+All services are monitored and healthy via Prometheus targets.
